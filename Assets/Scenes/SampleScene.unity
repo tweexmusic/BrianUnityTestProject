@@ -293,7 +293,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -366,24 +365,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd637f7fa4fec234eb31f53a06493241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goombaPrefab: {fileID: 1418932819301310502, guid: 52a207e3583044d4fbf0a5c84191c7e5,
-    type: 3}
-  koopaPrefab: {fileID: 250739318991069274, guid: ab3e7c38990919441848990eb44f788b,
-    type: 3}
-  bobombPrefab: {fileID: 6044511281375188080, guid: a33f4937b078e0245b95de90f3f4f82c,
-    type: 3}
 --- !u!1001 &1340245387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -529,6 +510,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3303633918321836576, guid: d68408302689542668b01fb8dae316e9,
+        type: 3}
+      propertyPath: enemyManager
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3303633918321836576, guid: d68408302689542668b01fb8dae316e9,
+        type: 3}
+      propertyPath: enemyManagerPrefab
+      value: 
+      objectReference: {fileID: 3948946657660209894, guid: 05b65c2ee431842c3825ee46f2748101,
+        type: 3}
     - target: {fileID: 3303633918321836577, guid: d68408302689542668b01fb8dae316e9,
         type: 3}
       propertyPath: m_RootOrder
