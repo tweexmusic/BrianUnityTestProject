@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+
+    //instance variable name indicates a singleton inside the class.
+    public static EnemyManager instance;
+
     public Enemy goombaPrefab;
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
@@ -12,6 +16,15 @@ public class EnemyManager : MonoBehaviour
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+
         Debug.Log("PRESS 'A' TO ATTACK!");
 
         void PopulateEnemyList()

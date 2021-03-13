@@ -5,11 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public EnemyManager enemyManagerPrefab;
-    private EnemyManager enemyManagerInstance;
 
     void DamageAllEnemies()
     {
-        foreach (Enemy enemy in enemyManagerInstance.enemies)
+        foreach (Enemy enemy in EnemyManager.instance.enemies)
         {
             if (enemy.enemyName == "Goomba")
             {
@@ -25,16 +24,11 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        enemyManagerInstance = FindObjectOfType<EnemyManager>();
-
-        if (enemyManagerInstance == null)
+        if (EnemyManager.instance == null)
         {
-            enemyManagerInstance = Instantiate(enemyManagerPrefab);
+            EnemyManager.instance = Instantiate(enemyManagerPrefab);
             Debug.LogWarning("No EnemeyManager instance found in scene. Adding one automatically.  FIX IT STUPID!!!");
         }
-
-        
-
     }
 
     // Update is called once per frame
