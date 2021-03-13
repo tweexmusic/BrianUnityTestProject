@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public EnemyManager enemyManagerPrefab;
 
     void DamageAllEnemies()
     {
@@ -24,11 +23,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (EnemyManager.instance == null)
-        {
-            EnemyManager.instance = Instantiate(enemyManagerPrefab);
-            Debug.LogWarning("No EnemeyManager instance found in scene. Adding one automatically.  FIX IT STUPID!!!");
-        }
+        
     }
 
     // Update is called once per frame
