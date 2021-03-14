@@ -1,31 +1,17 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Bobomb.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="27" Column="10" />
-      <File FileName="Assets/Scripts/Player.cs" Line="14" Column="28" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="15" Column="32" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="1" Column="19" />
-      <File FileName="Assets/Scripts/Goomba.cs" Line="16" Column="6" />
-      <File FileName="Assets/Scripts/Koopa.cs" Line="14" Column="47" />
-      <File FileName="Assets/Scripts/Bobomb.cs" Line="18" Column="38" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="33" Column="27" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/Goomba.cs" />
+      <File FileName="Assets/Scripts/Koopa.cs" />
+      <File FileName="Assets/Scripts/Bobomb.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BrianUnityTestProject" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Bobomb.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="69bca985-52ab-428e-b4f8-503bcb577952" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3c2ef8a5-afeb-4a55-aec0-37b8085f1a9c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

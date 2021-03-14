@@ -46,10 +46,7 @@ public class EnemyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (Enemy enemy in enemiesList)
-        {
-            Debug.Log(enemy);
-        }
+        
     }
 
     private void Update()
