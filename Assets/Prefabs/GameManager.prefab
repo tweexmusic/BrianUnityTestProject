@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2125607184346008035}
-  - component: {fileID: 2125607184346008032}
+  - component: {fileID: 3380643718021129285}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2125607184346008032
+--- !u!114 &3380643718021129285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,4 +46,6 @@ MonoBehaviour:
   enemyManagerPrefab: {fileID: 3948946657660209894, guid: 05b65c2ee431842c3825ee46f2748101,
     type: 3}
   playerPrefab: {fileID: 3303633918321836576, guid: d68408302689542668b01fb8dae316e9,
+    type: 3}
+  fmodOneShotPlayerPrefab: {fileID: 4440360410325993088, guid: 585a57e1b16994b619e0094f7266e79f,
     type: 3}

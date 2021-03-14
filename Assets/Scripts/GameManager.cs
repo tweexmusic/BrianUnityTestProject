@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     public EnemyManager enemyManagerPrefab;
     public Player playerPrefab;
+    public FMODOneShotPlayer fmodOneShotPlayerPrefab;
 
     private void Awake()
     {
@@ -26,7 +27,12 @@ public class GameManager : MonoBehaviour
             EnemyManager.instance = Instantiate(enemyManagerPrefab);
         }
 
+        if (FMODOneShotPlayer.instance == null)
+        {
+            FMODOneShotPlayer.instance = Instantiate(fmodOneShotPlayerPrefab);
+        }
     }
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,12 +41,13 @@ public class GameManager : MonoBehaviour
         Debug.LogWarning("PRESS 'B' TO ATTACK WITH BOBOMB!");
         Debug.LogWarning("PRESS 'K' TO ATTACK WITH KOOPA!");
         Debug.LogWarning("PRESS 'G' TO ATTACK WITH GOOMBA!");
+        Debug.LogWarning("PRESS 'Q' TO HEAR BATTLE MUSIC STEM. PRESS 'W' TO FADE IT OUT!");
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

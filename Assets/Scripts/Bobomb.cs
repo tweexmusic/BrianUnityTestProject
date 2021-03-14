@@ -15,6 +15,7 @@ public class Bobomb : Enemy
 
     public override void EnemyAttack()
     {
-            Player.instance.PlayerTakeDamage(12);
+        Player.instance.PlayerTakeDamage(12);
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_explosion_fire");
     }
 }

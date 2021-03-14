@@ -1,17 +1,20 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="33" Column="27" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="44" Column="92" />
+      <File FileName="Assets/Scripts/Player.cs" />
       <File FileName="Assets/Scripts/Enemy.cs" />
       <File FileName="Assets/Scripts/Goomba.cs" />
       <File FileName="Assets/Scripts/Koopa.cs" />
-      <File FileName="Assets/Scripts/Bobomb.cs" />
+      <File FileName="Assets/Scripts/Bobomb.cs" Line="19" Column="101" />
+      <File FileName="Assets/Scripts/MusicLevel1.cs" />
+      <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3c2ef8a5-afeb-4a55-aec0-37b8085f1a9c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d266b6b6-866b-43b7-b2df-b86107ab807d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -67,9 +67,11 @@
     <Compile Include="Assets\Scripts\Bobomb.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+    <Compile Include="Assets\Scripts\FMODOneShotPlayer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Goomba.cs" />
     <Compile Include="Assets\Scripts\Koopa.cs" />
+    <Compile Include="Assets\Scripts\MusicLevel1.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.21f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -627,7 +629,12 @@
       <HintPath>/Users/brianarnold/Dropbox (Personal)/Brian/Production Files/Documents/Learning Code/Unity/BrianUnityTestProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{603EC209-A436-5CCB-98FC-EFE04ABC9F9B}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

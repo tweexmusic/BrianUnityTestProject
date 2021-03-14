@@ -13,8 +13,11 @@ public class Player : MonoBehaviour
 
     void AttackAllEnemies()
     {
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_shoot");
+
         foreach (Enemy enemy in EnemyManager.instance.enemiesList)
         {
+
             if (enemy.enemyName == "Goomba")
             {
                 enemy.EnemeyTakeDamage(99);
