@@ -4,19 +4,37 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
 
-    void DamageAllEnemies()
+    public void PlayerTakeDamage(int enemyAttackDamage)
     {
-        foreach (Enemy enemy in EnemyManager.instance.enemies)
+        Debug.Log("Player takes " + enemyAttackDamage + " damage from " + EnemyManager.instance.enemyName);
+    }
+
+    void AttackAllEnemies()
+    {
+        foreach (Enemy enemy in EnemyManager.instance.enemiesList)
         {
             if (enemy.enemyName == "Goomba")
             {
-                enemy.TakeDamage(99);
+                enemy.EnemeyTakeDamage(99);
             }
             else
             {
-                enemy.TakeDamage(5);
+                enemy.EnemeyTakeDamage(5);
             }
+        }
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -31,7 +49,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            DamageAllEnemies();
+            AttackAllEnemies();
         }
     }
 }

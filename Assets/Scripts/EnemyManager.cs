@@ -11,7 +11,9 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
-    public List<Enemy> enemies = new List<Enemy>();
+    public string enemyName;
+
+    public List<Enemy> enemiesList = new List<Enemy>();
     private int enemyCount = 1;
 
     private void Awake()
@@ -25,17 +27,17 @@ public class EnemyManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        Debug.Log("PRESS 'A' TO ATTACK!");
 
         void PopulateEnemyList()
         {
             for (int i = 0; i < enemyCount; i++)
             {
-                enemies.Add(Instantiate(goombaPrefab));
-                enemies.Add(Instantiate(koopaPrefab));
-                enemies.Add(Instantiate(bobombPrefab));
+                enemiesList.Add(Instantiate(goombaPrefab));
+                enemiesList.Add(Instantiate(koopaPrefab));
+                enemiesList.Add(Instantiate(bobombPrefab));
             }
-            enemies.AddRange(FindObjectsOfType<Enemy>());
+            //Commented the next statement out because it was calling the EnemyTakeDamage() function twice per instance.
+            //enemiesList.AddRange(FindObjectsOfType<Enemy>());
         }
 
         PopulateEnemyList();
@@ -44,16 +46,30 @@ public class EnemyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        foreach (Enemy enemy in enemiesList)
+        {
+            Debug.Log(enemy);
+        }
     }
 
-    //Homework for Brian! Do this in an awake function so it happens before the player tries to attack
-    //BRIAN: DONE!
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            enemyName = "Goomba";
+            goombaPrefab.EnemyAttack();
+        }
 
+        if (Input.GetKeyDown(KeyCode.K)) 
+        {
+            enemyName = "Koopa";
+            koopaPrefab.EnemyAttack();
+        }
 
-    //Homework for Brian! Make a player class, and move this function into their start function!
-    //BRIAN: I actually put the DamageAllEnemies() function outside the start function.
-    //BRIAN: I called DamageAllEnemies() in the update function using an if statement to determine if the player is pressing "A"
-
-    //BRIAN: I also created a new Player prefab in the Unity editor and attached the PlayerController script to it.
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            enemyName = "Bobomb";
+            bobombPrefab.EnemyAttack();
+        }
+    }
 }
