@@ -14,16 +14,22 @@ public class MusicLevel1 : MonoBehaviour
         Music.release();
     }
 
+    protected enum BattleMusicParameter
+    {
+        Off,
+        On
+    }
+
     public static void BattleParameter()
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Music.setParameterByName("battle", 1);
+            Music.setParameterByName("battle", (float)BattleMusicParameter.On);
         }
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            Music.setParameterByName("battle", 0);
+            Music.setParameterByName("battle", (float)BattleMusicParameter.Off);
         }
     }
 
