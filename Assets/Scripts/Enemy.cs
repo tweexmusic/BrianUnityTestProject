@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
         Debug.Log(enemyName + " takes " + damage + " damage!");
     }
 
-    public virtual void EnemyAttack()
+    public virtual void EnemyAttack(int damage)
     {
         
     }

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+
         if (Player.instance == null)
         {
             Player.instance = Instantiate(playerPrefab);

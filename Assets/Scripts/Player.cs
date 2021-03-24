@@ -8,25 +8,7 @@ public class Player : MonoBehaviour
 
     public void PlayerTakeDamage(int enemyAttackDamage)
     {
-        Debug.Log("Player takes " + enemyAttackDamage + " damage from " + EnemyManager.instance.enemyName);
-    }
-
-    void AttackAllEnemies()
-    {
-        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_shoot");
-
-        foreach (Enemy enemy in EnemyManager.instance.enemiesList)
-        {
-
-            if (enemy.enemyName == "Goomba")
-            {
-                enemy.EnemeyTakeDamage(99);
-            }
-            else
-            {
-                enemy.EnemeyTakeDamage(5);
-            }
-        }
+        //Debug.Log("Player takes " + enemyAttackDamage + " damage from " + EnemyManager.instance);
     }
 
     private void Awake()
@@ -47,12 +29,20 @@ public class Player : MonoBehaviour
         
     }
 
+    //Handles player's shoot attack. Attack value is set in this function and that value is passed as parameter to EnemyTakeDamage()
+    public void PlayerAttackShoot(int damage)
+    {
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_shoot");
+        EnemyManager.instance.EnemyTakeDamage(damage);
+        //Debug.Log("Player deals " + damage + " damage to " + );
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            AttackAllEnemies();
+            PlayerAttackShoot(6);
         }
     }
 }

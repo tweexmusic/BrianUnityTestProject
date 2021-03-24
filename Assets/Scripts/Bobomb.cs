@@ -13,9 +13,10 @@ public class Bobomb : Enemy
         Debug.Log(enemyName + " explodes dealing " + damage + " damage to the player!");
     }
 
-    public override void EnemyAttack()
+    public override void EnemyAttack(int damage)
     {
-        Player.instance.PlayerTakeDamage(12);
+        Player.instance.PlayerTakeDamage(damage);
         FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_explosion_fire");
+        Debug.Log(enemyName + "deals " + damage + " to the player!");
     }
 }

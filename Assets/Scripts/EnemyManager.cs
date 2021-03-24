@@ -11,10 +11,22 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
-    public string enemyName;
+    //public string enemyName;
 
-    public List<Enemy> enemiesList = new List<Enemy>();
+    private List<Enemy> enemiesList = new List<Enemy>();
     private int enemyCount = 1;
+
+    void PopulateEnemyList()
+    {
+        for (int i = 0; i < enemyCount; i++)
+        {
+            enemiesList.Add(Instantiate(goombaPrefab));
+            enemiesList.Add(Instantiate(koopaPrefab));
+            enemiesList.Add(Instantiate(bobombPrefab));
+        }
+        //Commented the next statement out because it was calling the EnemyTakeDamage() function twice per instance.
+        //enemiesList.AddRange(FindObjectsOfType<Enemy>());
+    }
 
     private void Awake()
     {
@@ -27,19 +39,7 @@ public class EnemyManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-
-        void PopulateEnemyList()
-        {
-            for (int i = 0; i < enemyCount; i++)
-            {
-                enemiesList.Add(Instantiate(goombaPrefab));
-                enemiesList.Add(Instantiate(koopaPrefab));
-                enemiesList.Add(Instantiate(bobombPrefab));
-            }
-            //Commented the next statement out because it was calling the EnemyTakeDamage() function twice per instance.
-            //enemiesList.AddRange(FindObjectsOfType<Enemy>());
-        }
-
+        
         PopulateEnemyList();
     }
 
@@ -49,24 +49,31 @@ public class EnemyManager : MonoBehaviour
         
     }
 
+    //Handles all enemies in the enemiesList taking damage
+    public void EnemyTakeDamage(int damage)
+    {
+        foreach (Enemy enemy in enemiesList)
+        {
+            enemy.EnemeyTakeDamage(damage);
+        }
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            enemyName = "Goomba";
-            goombaPrefab.EnemyAttack();
+            goombaPrefab.EnemyAttack(3);
+
         }
 
         if (Input.GetKeyDown(KeyCode.K)) 
         {
-            enemyName = "Koopa";
-            koopaPrefab.EnemyAttack();
+            koopaPrefab.EnemyAttack(7);
         }
 
         if (Input.GetKeyDown(KeyCode.B))
         {
-            enemyName = "Bobomb";
-            bobombPrefab.EnemyAttack();
+            bobombPrefab.EnemyAttack(12);
         }
     }
 }
