@@ -1,0 +1,1708 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9180745862860345878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1 (old)/battle
+  m_EditorClassIdentifier: 
+  Name: battle
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-8691061475723193178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: ../unity_test_project_audio_FMOD20013/Build/Desktop/sfx.bank
+  SubDir: 
+  lastModified: 637513334080000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-8507354795627335767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1/battle
+  m_EditorClassIdentifier: 
+  Name: battle
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7999636736044440943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash_tube_exit
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash_tube_exit
+  guid: 930eec379d1d6444beed6250c04754e4
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-7901277530234743705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/enemies/enemy_death
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/enemies/enemy_death
+  guid: 55208dcbd0193745878ec9db5a264321
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
+--- !u!114 &-7637733694680460817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../unity_test_project_audio_FMOD20013/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637513333990000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7631484289061505288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_jump
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_jump
+  guid: 5fd016c465ba3a44864dd8da90cdef93
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-7362074644304191933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1 (old)/atmo_acid
+  m_EditorClassIdentifier: 
+  Name: atmo_acid
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-7251323116951971636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_grapple_zip
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_grapple_zip
+  guid: 73bcb67353c78844836abb729dc9dc16
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-7134069156918025295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash_tube_enter
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash_tube_enter
+  guid: 0db5d3d13e639e49ba928215d7836336
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-6719679285329334883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_grapple_hit
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_grapple_hit
+  guid: 664484c57253f44aabcb3478d7229ebc
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-6125497693111057148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash_tube_enter
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash_tube_enter
+  guid: 0db5d3d13e639e49ba928215d7836336
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-5444647708063709476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1/battle
+  m_EditorClassIdentifier: 
+  Name: battle
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-5270996567448177084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/heal_power_up
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/heal_power_up
+  guid: 7282cea9ae2331438433843afeea591f
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-4775529809541925390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash_tube_rolling
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash_tube_rolling
+  guid: f58eb609351b724a8e190063c1f138d5
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3624
+--- !u!114 &-4770908900046696454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1/atmo_acid
+  m_EditorClassIdentifier: 
+  Name: atmo_acid
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-4564637181779440499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/title_screen
+  m_EditorClassIdentifier: 
+  Path: event:/music/title_screen
+  guid: 25fc5840dddf6b419a4782530df98cee
+  Banks:
+  - {fileID: 2782168916303195871}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 43200
+--- !u!114 &-4168775025894983022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Build Assets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637513333990000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2350
+  Exists: 1
+--- !u!114 &-4097228274580996945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/final_cutscene
+  m_EditorClassIdentifier: 
+  Path: event:/music/final_cutscene
+  guid: 4acb88f34e808f4c9f0d9e0271443068
+  Banks:
+  - {fileID: 2782168916303195871}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2640840218817978951}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 108000
+--- !u!114 &-3988326678982587785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash
+  guid: 7886ff1457914b4884f69d7897617ce6
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-3603530443961108537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_explosion_wet
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_explosion_wet
+  guid: e3b743bff823b84cad969e39fcac2f9a
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &-3594179631293073566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ui/title_menu_button
+  m_EditorClassIdentifier: 
+  Path: event:/ui/title_menu_button
+  guid: 477fd033d19596429b755f8971878ea7
+  Banks:
+  - {fileID: -1004326805749360794}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-3125298227516865772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/hamster_respawn
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/hamster_respawn
+  guid: 1116be15298d104899ae6ec5108e7ff3
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-3015282698228292200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_damage_acid
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_damage_acid
+  guid: bf1f18d54aa5ec47bfffbe687fa748a1
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-2934537666628643246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/door_open
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/door_open
+  guid: 89a55221fd585747963fef90f80296de
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4374
+--- !u!114 &-2878842145661260818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_death
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_death
+  guid: cc6ad48c0a71854f9fda9e5588fbf21b
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &-2875575255007378853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/collect_hamster
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/collect_hamster
+  guid: b05bab9e4d973042b76eddb9ee39a587
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-2500633335327645212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_grapple_hit
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_grapple_hit
+  guid: 664484c57253f44aabcb3478d7229ebc
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-1995014091261661677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/enemies/enemy_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/enemies/enemy_shoot
+  guid: b34ef36bc702194abbe339abef2d752b
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-1870516676815191179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Build Assets/Desktop/sfx.bank
+  SubDir: 
+  lastModified: 637513334080000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-1004326805749360794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ui.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Build Assets/Desktop/ui.bank
+  SubDir: 
+  lastModified: 637513334080000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-681825951526022372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash
+  guid: 7886ff1457914b4884f69d7897617ce6
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &-483732343254753359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_damage
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_damage
+  guid: ebfbd5b8d788744b92dcf8429a5f4505
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &-251543950929033762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/final_cutscene
+  m_EditorClassIdentifier: 
+  Path: event:/music/final_cutscene
+  guid: 4acb88f34e808f4c9f0d9e0271443068
+  Banks:
+  - {fileID: 6772178900131556293}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4959949919038671543}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 108000
+--- !u!114 &-218681211775996662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/rock_breaking
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/rock_breaking
+  guid: 2a2b5f6d5f37644dabe20ff898ab8dc6
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -4168775025894983022}
+  - {fileID: 520195781858508380}
+  - {fileID: 6772178900131556293}
+  - {fileID: -1870516676815191179}
+  - {fileID: -1004326805749360794}
+  EditorEvents:
+  - {fileID: 6132295263492739447}
+  - {fileID: -251543950929033762}
+  - {fileID: 4968285576200598100}
+  - {fileID: 4259889919918590738}
+  - {fileID: -7134069156918025295}
+  - {fileID: 5581989579896504832}
+  - {fileID: 1670650717533102985}
+  - {fileID: -218681211775996662}
+  - {fileID: 4062080616867114873}
+  - {fileID: 1751181484554382020}
+  - {fileID: 4937701794595159219}
+  - {fileID: 3742912593890186094}
+  - {fileID: -2500633335327645212}
+  - {fileID: 1481108160349596552}
+  - {fileID: 3259636686899972603}
+  - {fileID: -681825951526022372}
+  - {fileID: 5451214956380826235}
+  - {fileID: 3067898485853359456}
+  - {fileID: 4801501552864806203}
+  - {fileID: -2875575255007378853}
+  - {fileID: 8769780491824962565}
+  - {fileID: 2086303949256423387}
+  - {fileID: 810537809937697650}
+  - {fileID: -3603530443961108537}
+  - {fileID: -483732343254753359}
+  - {fileID: 1139852812614067525}
+  - {fileID: 7283684262647410574}
+  - {fileID: -3594179631293073566}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 520195781858508380}
+  StringsBanks:
+  - {fileID: -4168775025894983022}
+  stringsBankWriteTime: 637513333990000000
+  cacheVersion: 3
+--- !u!114 &520195781858508380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Build Assets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637513333990000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &810537809937697650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_death
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_death
+  guid: cc6ad48c0a71854f9fda9e5588fbf21b
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &861139129374836954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1/atmo_acid
+  m_EditorClassIdentifier: 
+  Name: atmo_acid
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &1139852812614067525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_shoot
+  guid: f2f8e3a33ff8ec429185ed3acae6e553
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &1331520493994313664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/level1
+  m_EditorClassIdentifier: 
+  Path: event:/music/level1
+  guid: 756acfa37868294390a9bf2749b2981a
+  Banks:
+  - {fileID: 2782168916303195871}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 861139129374836954}
+  - {fileID: -8507354795627335767}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 192000
+--- !u!114 &1481108160349596552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/heal_power_up
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/heal_power_up
+  guid: 7282cea9ae2331438433843afeea591f
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &1670650717533102985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_grapple_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_grapple_shoot
+  guid: 1e277c3c4c58654a80da9bada9ba0d6c
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3750
+--- !u!114 &1751181484554382020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/enemies/enemy_death
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/enemies/enemy_death
+  guid: 55208dcbd0193745878ec9db5a264321
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
+--- !u!114 &1932037725421127121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/rock_breaking
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/rock_breaking
+  guid: 2a2b5f6d5f37644dabe20ff898ab8dc6
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &1954308847513758232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_explosion_fire
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_explosion_fire
+  guid: 5f36027df667f44eb82c72a1d50e375b
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &2086303949256423387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_damage_acid
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_damage_acid
+  guid: bf1f18d54aa5ec47bfffbe687fa748a1
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &2533940881589890318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../unity_test_project_audio_FMOD20013/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637513333990000000
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 2350
+  Exists: 1
+--- !u!114 &2640840218817978951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/final_cutscene/outro
+  m_EditorClassIdentifier: 
+  Name: outro
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &2782168916303195871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: ../unity_test_project_audio_FMOD20013/Build/Desktop/music.bank
+  SubDir: 
+  lastModified: 637513334070000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &3067898485853359456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/heal
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/heal
+  guid: 9173a993fbbea441a02ee33c12a1400e
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &3259636686899972603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_grapple_zip
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_grapple_zip
+  guid: 73bcb67353c78844836abb729dc9dc16
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &3316759175173701368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/collect_hamster
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/collect_hamster
+  guid: b05bab9e4d973042b76eddb9ee39a587
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &3446846561011563816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_grapple_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_grapple_shoot
+  guid: 1e277c3c4c58654a80da9bada9ba0d6c
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3750
+--- !u!114 &3502846402757109811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/heal
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/heal
+  guid: 9173a993fbbea441a02ee33c12a1400e
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &3742912593890186094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_jump
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_jump
+  guid: 5fd016c465ba3a44864dd8da90cdef93
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &3789735465485687266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_damage
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_damage
+  guid: ebfbd5b8d788744b92dcf8429a5f4505
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &4062080616867114873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_footsteps
+  guid: 328ff0a2f355f44eb59abb55fdb0e115
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 958
+--- !u!114 &4259889919918590738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/level1
+  m_EditorClassIdentifier: 
+  Path: event:/music/level1
+  guid: 756acfa37868294390a9bf2749b2981a
+  Banks:
+  - {fileID: 6772178900131556293}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4770908900046696454}
+  - {fileID: -5444647708063709476}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 192000
+--- !u!114 &4801501552864806203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash_tube_exit
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash_tube_exit
+  guid: 930eec379d1d6444beed6250c04754e4
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &4876085555657988612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_shoot
+  guid: f2f8e3a33ff8ec429185ed3acae6e553
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &4937701794595159219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_explosion_fire
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_explosion_fire
+  guid: 5f36027df667f44eb82c72a1d50e375b
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &4959949919038671543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/final_cutscene/outro
+  m_EditorClassIdentifier: 
+  Name: outro
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &4968285576200598100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/level1 (old)
+  m_EditorClassIdentifier: 
+  Path: event:/music/level1 (old)
+  guid: 4d2bc8d4c6a00146af901410f065c5c4
+  Banks:
+  - {fileID: 6772178900131556293}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7362074644304191933}
+  - {fileID: 8842275084799631274}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 216000
+--- !u!114 &5331070411487053048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ui.bank
+  m_EditorClassIdentifier: 
+  Path: ../unity_test_project_audio_FMOD20013/Build/Desktop/ui.bank
+  SubDir: 
+  lastModified: 637513334080000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &5451214956380826235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/door_open
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/door_open
+  guid: 89a55221fd585747963fef90f80296de
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4374
+--- !u!114 &5581989579896504832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/misc/hamster_respawn
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/misc/hamster_respawn
+  guid: 1116be15298d104899ae6ec5108e7ff3
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4000
+--- !u!114 &6132295263492739447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/title_screen
+  m_EditorClassIdentifier: 
+  Path: event:/music/title_screen
+  guid: 25fc5840dddf6b419a4782530df98cee
+  Banks:
+  - {fileID: 6772178900131556293}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 43200
+--- !u!114 &6772178900131556293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Build Assets/Desktop/music.bank
+  SubDir: 
+  lastModified: 637513334070000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7283684262647410574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_dash_tube_rolling
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_dash_tube_rolling
+  guid: f58eb609351b724a8e190063c1f138d5
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3624
+--- !u!114 &7620685196874596352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ui/title_menu_button
+  m_EditorClassIdentifier: 
+  Path: event:/ui/title_menu_button
+  guid: 477fd033d19596429b755f8971878ea7
+  Banks:
+  - {fileID: 5331070411487053048}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &7695617419837376470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/hamster_explosion_wet
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/hamster_explosion_wet
+  guid: e3b743bff823b84cad969e39fcac2f9a
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3000
+--- !u!114 &7754163767146704577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/abilities/player_footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/abilities/player_footsteps
+  guid: 328ff0a2f355f44eb59abb55fdb0e115
+  Banks:
+  - {fileID: -8691061475723193178}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 958
+--- !u!114 &8260597156009747651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1 (old)/atmo_acid
+  m_EditorClassIdentifier: 
+  Name: atmo_acid
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &8745390644928779318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music/level1 (old)
+  m_EditorClassIdentifier: 
+  Path: event:/music/level1 (old)
+  guid: 4d2bc8d4c6a00146af901410f065c5c4
+  Banks:
+  - {fileID: 2782168916303195871}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8260597156009747651}
+  - {fileID: -9180745862860345878}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 216000
+--- !u!114 &8769780491824962565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx/enemies/enemy_shoot
+  m_EditorClassIdentifier: 
+  Path: event:/sfx/enemies/enemy_shoot
+  guid: b34ef36bc702194abbe339abef2d752b
+  Banks:
+  - {fileID: -1870516676815191179}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
+--- !u!114 &8842275084799631274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/level1 (old)/battle
+  m_EditorClassIdentifier: 
+  Name: battle
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1

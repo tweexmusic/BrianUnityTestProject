@@ -9,8 +9,18 @@ public class Enemy : MonoBehaviour
         enemyName = "Generic Enemy";
     }
 
-    public virtual void TakeDamage(int damage)
+    public virtual void EnemeyTakeDamage(int damage)
     {
         Debug.Log(enemyName + " takes " + damage + " damage!");
+    }
+
+    public virtual void EnemyAttack(int damage)
+    {
+        
+    }
+
+    private void Update()
+    {
+        
     }
 }
