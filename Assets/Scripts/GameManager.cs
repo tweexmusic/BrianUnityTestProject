@@ -20,17 +20,17 @@ public class GameManager : MonoBehaviour
 
         if (Player.instance == null)
         {
-            Player.instance = Instantiate(playerPrefab);
+            Instantiate(playerPrefab);
         }
 
         if (EnemyManager.instance == null)
         {
-            EnemyManager.instance = Instantiate(enemyManagerPrefab);
+            Instantiate(enemyManagerPrefab);
         }
 
         if (FMODOneShotPlayer.instance == null)
         {
-            FMODOneShotPlayer.instance = Instantiate(fmodOneShotPlayerPrefab);
+            Instantiate(fmodOneShotPlayerPrefab);
         }
     }
 
