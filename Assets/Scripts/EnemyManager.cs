@@ -24,8 +24,6 @@ public class EnemyManager : MonoBehaviour
             enemiesList.Add(Instantiate(koopaPrefab));
             enemiesList.Add(Instantiate(bobombPrefab));
         }
-        //Commented the next statement out because it was calling the EnemyTakeDamage() function twice per instance.
-        //enemiesList.AddRange(FindObjectsOfType<Enemy>());
     }
 
     private void Awake()
@@ -43,18 +41,24 @@ public class EnemyManager : MonoBehaviour
         PopulateEnemyList();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    //Handles all enemies in the enemiesList taking damage
+    //Handles all enemies in the enemiesList taking damage.
+    //Also handles if enemies are still alive or if all have been defeated.
     public void EnemyTakeDamage(int damage)
     {
+        int enemyDeathCounter = 0;
+
         foreach (Enemy enemy in enemiesList)
         {
             enemy.EnemeyTakeDamage(damage);
+            if (enemy.enemyHealth <= 0)
+            {
+                enemyDeathCounter++;
+            }
+
+            if (enemyDeathCounter >= enemiesList.Count)
+            {
+                Enemy.enemyAlive = false;
+            }
         }
     }
 

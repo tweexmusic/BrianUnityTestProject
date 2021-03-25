@@ -13,4 +13,9 @@ public class Goomba : Enemy
         FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.GOOMBA_ATTACK);
         Debug.Log("Goomba deals " + damage + " damage to the player!");
     }
+
+    public override void EnemyHealth()
+    {
+        enemyHealth = 13;
+    }
 }

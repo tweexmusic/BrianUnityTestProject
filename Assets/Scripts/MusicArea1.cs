@@ -18,6 +18,7 @@ public class MusicArea1 : MonoBehaviour
         music.release();
     }
 
+    //By using enum types, statements that change the paramter value are easier to read and less prone to typos.
     protected enum BattleMusicParameter
     {
         Off,
@@ -34,12 +35,12 @@ public class MusicArea1 : MonoBehaviour
 
     public static void BattleParameter()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Player.instance.inBattle == true)
         {
             music.setParameterByName(BATTLE_PARAMETER, (float)BattleMusicParameter.On);
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if(Enemy.enemyAlive == false)
         {
             music.setParameterByName(BATTLE_PARAMETER, (float)BattleMusicParameter.Off);
         }

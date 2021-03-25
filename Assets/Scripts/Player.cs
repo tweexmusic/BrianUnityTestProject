@@ -2,9 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Class that handles player actions and behaviors.
+/// SINGLETON
+/// </summary>
+
 public class Player : MonoBehaviour
 {
     public static Player instance;
+
+    public bool inBattle = false;
 
     public void PlayerTakeDamage(int enemyAttackDamage)
     {
@@ -28,7 +35,7 @@ public class Player : MonoBehaviour
     {
         FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.PLAYER_SHOOT);
         EnemyManager.instance.EnemyTakeDamage(damage);
-        //Debug.Log("Player deals " + damage + " damage to " + );
+        inBattle = true;
     }
 
     // Update is called once per frame
