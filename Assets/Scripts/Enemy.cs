@@ -4,7 +4,6 @@ public class Enemy : MonoBehaviour
 {
     public string enemyName;
     public int enemyHealth;
-    public static bool enemyAlive = true;
 
     public Enemy()
     {

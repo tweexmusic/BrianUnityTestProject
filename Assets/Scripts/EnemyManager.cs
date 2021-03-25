@@ -11,6 +11,8 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
+    public static bool enemyAlive;
+
     //public string enemyName;
 
     protected List<Enemy> enemiesList = new List<Enemy>();
@@ -24,6 +26,8 @@ public class EnemyManager : MonoBehaviour
             enemiesList.Add(Instantiate(koopaPrefab));
             enemiesList.Add(Instantiate(bobombPrefab));
         }
+
+        enemyAlive = true;
     }
 
     private void Awake()
@@ -57,7 +61,7 @@ public class EnemyManager : MonoBehaviour
 
             if (enemyDeathCounter >= enemiesList.Count)
             {
-                Enemy.enemyAlive = false;
+                enemyAlive = false;
             }
         }
     }
