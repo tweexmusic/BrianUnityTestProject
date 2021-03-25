@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Class that houses specifics of Koopa enemy.
+/// Inherits from Enemy class.
+/// </summary>
+
 public class Koopa : Enemy
 {
+    //Constructor that defines enemy name
     public Koopa()
     {
         enemyName = "Koopa";

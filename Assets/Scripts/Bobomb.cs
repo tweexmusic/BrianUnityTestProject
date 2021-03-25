@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Class that houses specifics of Bobomb enemy.
+/// Inherits from Enemy class.
+/// </summary>
+
 public class Bobomb : Enemy
 {
+    //Constructor that defines enemy name
     public Bobomb()
     {
         enemyName = "Bobomb";

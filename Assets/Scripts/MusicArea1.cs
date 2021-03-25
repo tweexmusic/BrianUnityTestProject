@@ -40,7 +40,7 @@ public class MusicArea1 : MonoBehaviour
             music.setParameterByName(BATTLE_PARAMETER, (float)BattleMusicParameter.On);
         }
 
-        if(EnemyManager.enemyAlive == false)
+        if(EnemyManager.enemiesAlive == false)
         {
             music.setParameterByName(BATTLE_PARAMETER, (float)BattleMusicParameter.Off);
         }

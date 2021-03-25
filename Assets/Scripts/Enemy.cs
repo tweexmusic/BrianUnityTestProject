@@ -1,15 +1,22 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Enemy class houses virtual methods for handling enemy abilities and stats.
+/// </summary>
+
 public class Enemy : MonoBehaviour
 {
     public string enemyName;
     public int enemyHealth;
 
+    //Constructor that defines enemy name
     public Enemy()
     {
         enemyName = "Generic Enemy";
     }
 
+
+    //Manages enemy health value calculations when taking damage.
     public virtual void EnemeyTakeDamage(int damage)
     {
         enemyHealth = enemyHealth - damage;
@@ -25,6 +32,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    //Handles enemy attack statements.  Usually defined inside speicific derived enemy class.
     public virtual void EnemyAttack(int damage)
     {
         
@@ -38,7 +46,7 @@ public class Enemy : MonoBehaviour
 
     void Awake()
     {
-        //Sets enemy health values when scene awakes.
+        //Sets enemy health values when enemy list is created inside of EnemyManager.
         EnemyHealth();
     }
 }

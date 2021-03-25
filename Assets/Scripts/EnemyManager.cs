@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
-    public static bool enemyAlive;
+    public static bool enemiesAlive;
 
     //public string enemyName;
 
@@ -27,7 +27,7 @@ public class EnemyManager : MonoBehaviour
             enemiesList.Add(Instantiate(bobombPrefab));
         }
 
-        enemyAlive = true;
+        enemiesAlive = true;
     }
 
     private void Awake()
@@ -46,7 +46,7 @@ public class EnemyManager : MonoBehaviour
     }
 
     //Handles all enemies in the enemiesList taking damage.
-    //Also handles if enemies are still alive or if all have been defeated.
+    //Determines if enemies are still alive or if all have been defeated.
     public void EnemyTakeDamage(int damage)
     {
         int enemyDeathCounter = 0;
@@ -61,7 +61,7 @@ public class EnemyManager : MonoBehaviour
 
             if (enemyDeathCounter >= enemiesList.Count)
             {
-                enemyAlive = false;
+                enemiesAlive = false;
             }
         }
     }
@@ -71,7 +71,6 @@ public class EnemyManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             goombaPrefab.EnemyAttack(3);
-
         }
 
         if (Input.GetKeyDown(KeyCode.K)) 

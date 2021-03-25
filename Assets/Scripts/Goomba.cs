@@ -1,7 +1,14 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Class that houses specifics of Goomba enemy.
+/// Inherits from Enemy class.
+/// </summary>
+
 public class Goomba : Enemy
 {
+
+    //Constructor that defines enemy name
     public Goomba()
     {
         enemyName = "Goomba";
