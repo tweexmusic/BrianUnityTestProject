@@ -10,7 +10,7 @@ public class Koopa : Enemy
     public override void EnemyAttack(int damage)
     {
         Player.instance.PlayerTakeDamage(damage);
-        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_grapple_shoot");
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.KOOPA_ATTACK);
         Debug.Log("Koopa deals " + damage + " damage to the player!");
     }
 }

@@ -1,27 +1,34 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FMODEventConstants.cs">
     <Files>
       <File FileName="Assets/Scripts/MusicLevel1.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="60" Column="14" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="54" Column="2" />
-      <File FileName="Assets/Scripts/Player.cs" Line="34" Column="79" />
+      <File FileName="Assets/Scripts/GameManager.cs" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" />
+      <File FileName="Assets/Scripts/Player.cs" Line="7" Column="35" />
       <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="5" Column="11" />
-      <File FileName="Assets/Scripts/Goomba.cs" Line="14" Column="59" />
-      <File FileName="Assets/Scripts/Koopa.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Bobomb.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy.cs" />
+      <File FileName="Assets/Scripts/Goomba.cs" />
+      <File FileName="Assets/Scripts/Koopa.cs" />
+      <File FileName="Assets/Scripts/Bobomb.cs" />
+      <File FileName="Assets/Scripts/FMODEventConstants.cs" Line="7" Column="7" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="BrianUnityTestProject" expanded="True" selected="True" />
+          <Node name="BrianUnityTestProject" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="FMODEventConstants.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8af17da5-d486-4b1b-a7e3-f2a8349d2174" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b704f1dc-da0d-4849-9d7a-203f92885e23" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -13,8 +13,8 @@ public class EnemyManager : MonoBehaviour
 
     //public string enemyName;
 
-    private List<Enemy> enemiesList = new List<Enemy>();
-    private int enemyCount = 1;
+    protected List<Enemy> enemiesList = new List<Enemy>();
+    protected int enemyCount = 1;
 
     void PopulateEnemyList()
     {

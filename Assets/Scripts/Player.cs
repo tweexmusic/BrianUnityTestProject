@@ -23,16 +23,10 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     //Handles player's shoot attack. Attack value is set in this function and that value is passed as parameter to EnemyTakeDamage()
     public void PlayerAttackShoot(int damage)
     {
-        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/hamster_shoot");
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.PLAYER_SHOOT);
         EnemyManager.instance.EnemyTakeDamage(damage);
         //Debug.Log("Player deals " + damage + " damage to " + );
     }

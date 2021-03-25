@@ -10,7 +10,7 @@ public class Goomba : Enemy
     public override void EnemyAttack(int damage)
     {
         Player.instance.PlayerTakeDamage(damage);
-        FMODOneShotPlayer.instance.FMODPlayOneShotSound("event:/sfx/abilities/player_damage_acid");
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.GOOMBA_ATTACK);
         Debug.Log("Goomba deals " + damage + " damage to the player!");
     }
 }
