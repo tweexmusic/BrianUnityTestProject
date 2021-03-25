@@ -11,7 +11,7 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
-    public static bool enemiesAlive;
+    public bool enemiesAlive;
 
     //public string enemyName;
 
