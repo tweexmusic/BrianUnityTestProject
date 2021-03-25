@@ -1,34 +1,20 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FMODEventConstants.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/MusicLevel1.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GameManager.cs" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" />
-      <File FileName="Assets/Scripts/Player.cs" Line="7" Column="35" />
-      <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FMODEventConstants.cs" Line="7" Column="15" />
+      <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" />
+      <File FileName="Assets/Scripts/Player.cs" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="65" Column="67" />
       <File FileName="Assets/Scripts/Enemy.cs" />
       <File FileName="Assets/Scripts/Goomba.cs" />
       <File FileName="Assets/Scripts/Koopa.cs" />
       <File FileName="Assets/Scripts/Bobomb.cs" />
-      <File FileName="Assets/Scripts/FMODEventConstants.cs" Line="7" Column="7" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BrianUnityTestProject" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="FMODEventConstants.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b704f1dc-da0d-4849-9d7a-203f92885e23" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12185a22-f779-4ff9-8439-7969d54a0fc9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

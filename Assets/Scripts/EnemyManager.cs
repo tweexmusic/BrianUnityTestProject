@@ -62,6 +62,7 @@ public class EnemyManager : MonoBehaviour
             if (enemyDeathCounter >= enemiesList.Count)
             {
                 enemiesAlive = false;
+                Debug.LogError("All enemies have been defeated!");
             }
         }
     }
