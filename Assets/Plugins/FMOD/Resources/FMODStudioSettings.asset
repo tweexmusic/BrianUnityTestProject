@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 1
   sourceProjectPath: ../unity_test_project_audio_FMOD20013/unity_test_project_audio_FMOD20013.fspro
-  sourceBankPath: ../unity_test_project_audio_FMOD20013/Build
+  sourceBankPath: Assets/FMOD Build Assets
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0

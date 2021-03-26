@@ -35,12 +35,12 @@ public class MusicArea1 : MonoBehaviour
 
     public static void BattleParameter()
     {
-        if (Player.instance.inBattle == true)
+        if (Player.instance.inBattle == true && EnemyManager.instance.enemiesAlive == true)
         {
             music.setParameterByName(BATTLE_PARAMETER, (float)BattleMusicParameter.On);
         }
 
-        if(EnemyManager.instance.enemiesAlive == false)
+        if(Player.instance.inBattle == false || EnemyManager.instance.enemiesAlive == false)
         {
             music.setParameterByName(BATTLE_PARAMETER, (float)BattleMusicParameter.Off);
         }

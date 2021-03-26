@@ -14,6 +14,7 @@ public class FMODEventConstants
 
     //Player SFX constants
     public const string PLAYER_SHOOT = "event:/sfx/abilities/hamster_shoot";
+    public const string PLAYER_DEATH = "event:/sfx/abilities/player_death";
 
 
     //Enemy SFX constants

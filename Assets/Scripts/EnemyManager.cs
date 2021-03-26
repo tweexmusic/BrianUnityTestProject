@@ -11,24 +11,29 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
-    public bool enemiesAlive;
+    private Enemy spawnedGoomba;
+    private Enemy spawnedKoopa;
 
-    //public string enemyName;
+    public bool enemiesAlive;
 
     protected List<Enemy> enemiesList = new List<Enemy>();
     protected int enemyCount = 1;
 
-    void PopulateEnemyList()
+
+    protected void PopulateEnemyList()
     {
+        spawnedGoomba = Instantiate(goombaPrefab);
+
         for (int i = 0; i < enemyCount; i++)
         {
-            enemiesList.Add(Instantiate(goombaPrefab));
+            enemiesList.Add(spawnedGoomba);
             enemiesList.Add(Instantiate(koopaPrefab));
             enemiesList.Add(Instantiate(bobombPrefab));
         }
 
         enemiesAlive = true;
     }
+
 
     private void Awake()
     {
@@ -41,47 +46,30 @@ public class EnemyManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        
         PopulateEnemyList();
     }
 
     //Handles all enemies in the enemiesList taking damage.
     //Determines if enemies are still alive or if all have been defeated.
+    //Modifies the enemiesList and removes indices and game objects if enemy health falls to 0
     public void EnemyTakeDamage(int damage)
     {
-        int enemyDeathCounter = 0;
-
-        foreach (Enemy enemy in enemiesList)
+        foreach (Enemy enemy in enemiesList.ToArray())
         {
             enemy.EnemeyTakeDamage(damage);
             if (enemy.enemyHealth <= 0)
             {
-                enemyDeathCounter++;
+                enemy.enemyAlive = false;
+                Destroy(enemy.gameObject);
+                enemiesList.Remove(enemy);
             }
 
-            if (enemyDeathCounter >= enemiesList.Count)
+            if (enemiesList.Count == 0)
             {
+                Player.instance.inBattle = false;
                 enemiesAlive = false;
                 Debug.LogError("All enemies have been defeated!");
             }
-        }
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            goombaPrefab.EnemyAttack(3);
-        }
-
-        if (Input.GetKeyDown(KeyCode.K)) 
-        {
-            koopaPrefab.EnemyAttack(7);
-        }
-
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            bobombPrefab.EnemyAttack(12);
         }
     }
 }

@@ -13,16 +13,26 @@ public class Bobomb : Enemy
         enemyName = "Bobomb";
     }
 
+    public override void EnemyAttack(int damage)
+    {
+        base.EnemyAttack(damage);
+        Player.instance.PlayerTakeDamage(damage);
+        FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.BOBOMB_ATTACK);
+        Debug.Log(enemyName + " deals " + damage + " to the player!");
+    }
+
     public override void EnemeyTakeDamage(int damage)
     {
         base.EnemeyTakeDamage(damage);
         Debug.Log(enemyName + " explodes dealing " + damage + " damage to the player!");
+        Player.instance.PlayerTakeDamage(damage);
     }
 
-    public override void EnemyAttack(int damage)
+    private void Update()
     {
-        Player.instance.PlayerTakeDamage(damage);
-        FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.BOBOMB_ATTACK);
-        Debug.Log(enemyName + " deals " + damage + " to the player!");
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            EnemyAttack(12);
+        }
     }
 }

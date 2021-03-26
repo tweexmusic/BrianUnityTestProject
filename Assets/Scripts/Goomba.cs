@@ -7,7 +7,6 @@
 
 public class Goomba : Enemy
 {
-
     //Constructor that defines enemy name
     public Goomba()
     {
@@ -16,13 +15,22 @@ public class Goomba : Enemy
 
     public override void EnemyAttack(int damage)
     {
+        base.EnemyAttack(damage);
         Player.instance.PlayerTakeDamage(damage);
         FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.GOOMBA_ATTACK);
-        Debug.Log("Goomba deals " + damage + " damage to the player!");
+        Debug.Log(enemyName + " deals " + damage + " damage to the player!");
     }
 
     public override void EnemyHealth()
     {
         enemyHealth = 13;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            EnemyAttack(3);
+        }
     }
 }
