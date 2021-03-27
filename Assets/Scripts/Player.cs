@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
 
         if (playerHealth <= 0)
         {
-            FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.PLAYER_DEATH);
+            FMODOneShotPlayer.instance.PlayOneShotSound(FMODEventConstants.PLAYER_DEATH);
             Debug.LogError("Player takes " + enemyAttackDamage + " damage and dies!");
             inBattle = false;
         }
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     //Handles player's shoot attack. Attack value is set when calling this function and that value is passed as parameter to EnemyTakeDamage()
     public void PlayerAttackShoot(int damage)
     {
-        FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.PLAYER_SHOOT);
+        FMODOneShotPlayer.instance.PlayOneShotSound(FMODEventConstants.PLAYER_SHOOT);
         EnemyManager.instance.EnemyTakeDamageGlobal(damage);
     }
 

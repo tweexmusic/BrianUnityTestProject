@@ -68,12 +68,12 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\FMODEventConstants.cs" />
+    <Compile Include="Assets\Scripts\FMODMusicArea1.cs" />
     <Compile Include="Assets\Scripts\FMODOneShotPlayer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Goomba.cs" />
     <Compile Include="Assets\Scripts\HammerBro.cs" />
     <Compile Include="Assets\Scripts\Koopa.cs" />
-    <Compile Include="Assets\Scripts\MusicArea1.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <None Include="Assets\FMOD Build Assets\GUIDs.txt" />
     <Reference Include="UnityEngine">

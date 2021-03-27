@@ -12,7 +12,7 @@ public class FMODOneShotPlayer : MonoBehaviour
 {
     public static FMODOneShotPlayer instance;
 
-    public void FMODPlayOneShotSound(string fmodEventPath)
+    public void PlayOneShotSound(string fmodEventPath)
     {
         FMODUnity.RuntimeManager.PlayOneShot(fmodEventPath, GetComponent<Transform>().position);
     }
