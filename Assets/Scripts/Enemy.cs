@@ -27,6 +27,7 @@ public class Enemy : MonoBehaviour
             Debug.Log(enemyName + " takes " + damage + " damage and has " + enemyHealth + " health remaining!");
             Player.instance.inBattle = true;
         }
+
         else
         {
             enemyAlive = false;
@@ -37,10 +38,7 @@ public class Enemy : MonoBehaviour
     //Handles enemy attack statements.  Usually defined inside speicific derived enemy class.
     public virtual void EnemyAttack(int damage)
     {
-        if (enemyHealth > 0 && Player.instance.playerHealth > 0)
-        {
             Player.instance.inBattle = true;
-        }
     }
 
     //Used to set health value for enemies.  Deafult is 20, but can be overided in derived enemy class.

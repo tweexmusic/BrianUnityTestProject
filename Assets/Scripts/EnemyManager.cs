@@ -11,29 +11,19 @@ public class EnemyManager : MonoBehaviour
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
 
-    private Enemy spawnedGoomba;
-    private Enemy spawnedKoopa;
-
     public bool enemiesAlive;
 
     protected List<Enemy> enemiesList = new List<Enemy>();
-    protected int enemyCount = 1;
 
-
+    /// <summary>
+    /// Populates enemiesList with all enemy game objects manually placed into scene.
+    /// </summary>
     protected void PopulateEnemyList()
     {
-        spawnedGoomba = Instantiate(goombaPrefab);
-
-        for (int i = 0; i < enemyCount; i++)
-        {
-            enemiesList.Add(spawnedGoomba);
-            enemiesList.Add(Instantiate(koopaPrefab));
-            enemiesList.Add(Instantiate(bobombPrefab));
-        }
-
+        enemiesList.AddRange(GameObject.FindObjectsOfType<Enemy>());
         enemiesAlive = true;
     }
-
+    
 
     private void Awake()
     {
@@ -57,6 +47,7 @@ public class EnemyManager : MonoBehaviour
         foreach (Enemy enemy in enemiesList.ToArray())
         {
             enemy.EnemeyTakeDamage(damage);
+
             if (enemy.enemyHealth <= 0)
             {
                 enemy.enemyAlive = false;
@@ -70,6 +61,15 @@ public class EnemyManager : MonoBehaviour
                 enemiesAlive = false;
                 Debug.LogError("All enemies have been defeated!");
             }
+        }
+    }
+
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            Debug.Log(enemiesList.Count);
         }
     }
 }

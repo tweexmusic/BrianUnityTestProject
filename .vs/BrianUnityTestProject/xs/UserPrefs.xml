@@ -1,22 +1,22 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/EnemyManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="15" Column="1" />
       <File FileName="Assets/Scripts/MusicArea1.cs" Line="18" Column="25" />
       <File FileName="Assets/Scripts/FMODEventConstants.cs" Line="17" Column="76" />
       <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Player.cs" Line="21" Column="1" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="27" Column="45" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="38" Column="41" />
-      <File FileName="Assets/Scripts/Goomba.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/Koopa.cs" Line="19" Column="1" />
-      <File FileName="Assets/Scripts/Bobomb.cs" Line="13" Column="30" />
-      <File FileName="Assets/FMOD Build Assets/GUIDs.txt" Line="25" Column="40" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="23" Column="69" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="42" Column="1" />
+      <File FileName="Assets/Scripts/Goomba.cs" Line="32" Column="1" />
+      <File FileName="Assets/Scripts/Koopa.cs" Line="31" Column="94" />
+      <File FileName="Assets/Scripts/Bobomb.cs" Line="26" Column="39" />
+      <File FileName="Assets/FMOD Build Assets/GUIDs.txt" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3403f337-d9de-454a-9b51-d5073769b5f7" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

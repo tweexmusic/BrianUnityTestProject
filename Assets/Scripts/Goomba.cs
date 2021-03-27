@@ -28,7 +28,7 @@ public class Goomba : Enemy
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(KeyCode.G))
         {
             EnemyAttack(3);
         }

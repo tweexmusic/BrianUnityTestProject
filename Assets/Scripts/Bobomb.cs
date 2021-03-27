@@ -30,7 +30,7 @@ public class Bobomb : Enemy
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.B))
+        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(KeyCode.B))
         {
             EnemyAttack(12);
         }

@@ -28,7 +28,7 @@ public class Koopa : Enemy
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(KeyCode.K))
         {
             EnemyAttack(7);
         }
