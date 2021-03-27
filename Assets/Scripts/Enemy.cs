@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
 {
     public string enemyName;
     public int enemyHealth;
-    public bool enemyAlive = true;
 
     //Constructor that defines enemy name
     public Enemy()
@@ -16,8 +15,11 @@ public class Enemy : MonoBehaviour
         enemyName = "Generic Enemy";
     }
 
-
-    //Manages enemy health value calculations when taking damage.
+    /// <summary>
+    /// Manages enemy health value calculations when taking damage.
+    /// "damage" paramater is passed in from EnemyManger's EnemeyTakeDamageGlobal method.
+    /// </summary>
+    /// <param name="damage"></param>
     public virtual void EnemeyTakeDamage(int damage)
     {
         enemyHealth = enemyHealth - damage;
@@ -30,18 +32,25 @@ public class Enemy : MonoBehaviour
 
         else
         {
-            enemyAlive = false;
             Debug.LogWarning(enemyName + " has been defeated!");
+            FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.ENEMY_DEATH);
         }
     }
-    
-    //Handles enemy attack statements.  Usually defined inside speicific derived enemy class.
+
+    /// <summary>
+    /// Handles enemy attack statements.  Derived classes may have additional/alternate behehaviors.
+    /// </summary>
+    /// <param name="damage"></param>
     public virtual void EnemyAttack(int damage)
     {
-            Player.instance.inBattle = true;
+        Player.instance.inBattle = true;
+        Player.instance.PlayerTakeDamage(damage);
+        Debug.Log(enemyName + " deals " + damage + " damage to the player!");
     }
 
-    //Used to set health value for enemies.  Deafult is 20, but can be overided in derived enemy class.
+    /// <summary>
+    /// Used to set health value for enemies.  Deafult is 20, but can be overridden in derived enemy class.
+    /// </summary>
     public virtual void EnemyHealth()
     {
         enemyHealth = 20;

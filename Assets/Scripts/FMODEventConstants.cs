@@ -21,5 +21,7 @@ public class FMODEventConstants
     public const string GOOMBA_ATTACK = "event:/sfx/abilities/player_damage_acid";
     public const string KOOPA_ATTACK = "event:/sfx/abilities/hamster_grapple_shoot";
     public const string BOBOMB_ATTACK = "event:/sfx/abilities/hamster_explosion_fire";
+    public const string HAMMERBRO_ATTACK = "event:/sfx/enemies/enemy_shoot";
+    public const string ENEMY_DEATH = "event:/sfx/enemies/enemy_death";
 
 }

@@ -10,9 +10,13 @@ public class EnemyManager : MonoBehaviour
     public Enemy goombaPrefab;
     public Enemy koopaPrefab;
     public Enemy bobombPrefab;
+    public Enemy hammerBroPrefab;
 
     public bool enemiesAlive;
 
+    /// <summary>
+    /// List that holds enemy game objects and keeps track of their individual stats.
+    /// </summary>
     protected List<Enemy> enemiesList = new List<Enemy>();
 
     /// <summary>
@@ -20,10 +24,18 @@ public class EnemyManager : MonoBehaviour
     /// </summary>
     protected void PopulateEnemyList()
     {
-        enemiesList.AddRange(GameObject.FindObjectsOfType<Enemy>());
+        enemiesList.AddRange(FindObjectsOfType<Enemy>());
         enemiesAlive = true;
     }
-    
+
+    /// <summary>
+    /// Spawns Goomba enemy game objects into the scene and adds them to the enemiesList.
+    /// </summary>
+    public void SpawnGoomba()
+    {
+        enemiesList.Add(Instantiate(goombaPrefab));
+    }
+
 
     private void Awake()
     {
@@ -39,20 +51,25 @@ public class EnemyManager : MonoBehaviour
         PopulateEnemyList();
     }
 
-    //Handles all enemies in the enemiesList taking damage.
-    //Determines if enemies are still alive or if all have been defeated.
-    //Modifies the enemiesList and removes indices and game objects if enemy health falls to 0
-    public void EnemyTakeDamage(int damage)
+    /// <summary>
+    /// Handles all enemies in the enemiesList taking damage.
+    /// Determines if enemies are still alive or if all have been defeated.
+    /// Modifies the enemiesList by removing indices and game objects if enemy health falls to 0.
+    /// </summary>
+    /// <param name="damage"></param>
+    public void EnemyTakeDamageGlobal(int damage)
     {
+        if (enemiesList.Count > 0)
+        {
+            enemiesList[0].EnemeyTakeDamage(damage);
+        }
+
         foreach (Enemy enemy in enemiesList.ToArray())
         {
-            enemy.EnemeyTakeDamage(damage);
-
             if (enemy.enemyHealth <= 0)
             {
-                enemy.enemyAlive = false;
-                Destroy(enemy.gameObject);
                 enemiesList.Remove(enemy);
+                Destroy(enemy.gameObject);
             }
 
             if (enemiesList.Count == 0)
@@ -64,7 +81,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.D))

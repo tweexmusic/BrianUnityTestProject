@@ -16,9 +16,7 @@ public class Bobomb : Enemy
     public override void EnemyAttack(int damage)
     {
         base.EnemyAttack(damage);
-        Player.instance.PlayerTakeDamage(damage);
         FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.BOBOMB_ATTACK);
-        Debug.Log(enemyName + " deals " + damage + " to the player!");
     }
 
     public override void EnemeyTakeDamage(int damage)

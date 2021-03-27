@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\FMODOneShotPlayer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Goomba.cs" />
+    <Compile Include="Assets\Scripts\HammerBro.cs" />
     <Compile Include="Assets\Scripts\Koopa.cs" />
     <Compile Include="Assets\Scripts\MusicArea1.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />

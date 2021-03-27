@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
     public void PlayerAttackShoot(int damage)
     {
         FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.PLAYER_SHOOT);
-        EnemyManager.instance.EnemyTakeDamage(damage);
+        EnemyManager.instance.EnemyTakeDamageGlobal(damage);
     }
 
     // Update is called once per frame

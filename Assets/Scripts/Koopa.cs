@@ -16,9 +16,7 @@ public class Koopa : Enemy
     public override void EnemyAttack(int damage)
     {
         base.EnemyAttack(damage);
-        Player.instance.PlayerTakeDamage(damage);
         FMODOneShotPlayer.instance.FMODPlayOneShotSound(FMODEventConstants.KOOPA_ATTACK);
-        Debug.Log(enemyName + " deals " + damage + " damage to the player!");
     }
 
     public override void EnemyHealth()

@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-
         if (Player.instance == null)
         {
             Instantiate(playerPrefab);
@@ -32,7 +31,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -40,13 +38,8 @@ public class GameManager : MonoBehaviour
         Debug.LogWarning("PRESS 'B' TO ATTACK WITH BOBOMB!");
         Debug.LogWarning("PRESS 'K' TO ATTACK WITH KOOPA!");
         Debug.LogWarning("PRESS 'G' TO ATTACK WITH GOOMBA!");
+        Debug.LogWarning("PRESS 'H' TO ATTACK WITH HAMMER BRO!");
         Debug.LogWarning("PRESS 'S' TO STOP MUSIC!");
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
     }
 }

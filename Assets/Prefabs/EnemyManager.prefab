@@ -49,3 +49,6 @@ MonoBehaviour:
     type: 3}
   bobombPrefab: {fileID: 6044511281375188080, guid: a33f4937b078e0245b95de90f3f4f82c,
     type: 3}
+  hammerBroPrefab: {fileID: -4322166878466687349, guid: 53112537266f74c61956ab907ba1908e,
+    type: 3}
+  enemiesAlive: 0
