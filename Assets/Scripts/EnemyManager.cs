@@ -31,9 +31,9 @@ public class EnemyManager : MonoBehaviour
     /// <summary>
     /// Spawns Goomba enemy game objects into the scene and adds them to the enemiesList.
     /// </summary>
-    public void SpawnGoomba()
+    public void SpawnEnemy(Enemy enemyPrefab)
     {
-        enemiesList.Add(Instantiate(goombaPrefab));
+        enemiesList.Add(Instantiate(enemyPrefab));
     }
 
 
@@ -76,7 +76,7 @@ public class EnemyManager : MonoBehaviour
             {
                 Player.instance.inBattle = false;
                 enemiesAlive = false;
-                Debug.LogError("All enemies have been defeated!");
+                Debug.LogError("You have successfully murdered all the natural inhabitants of this world...");
             }
         }
     }

@@ -25,9 +25,9 @@ public class HammerBro : Enemy
 
         if (enemyHealth <= 0)
         {
-            Debug.LogWarning(enemyName + " calls two Goombas before it dies!");
-            EnemyManager.instance.SpawnGoomba();
-            EnemyManager.instance.SpawnGoomba();
+            Debug.LogWarning("A Goomba and a Koopa appear to avenge the death of their friend, " + enemyName + "!");
+            EnemyManager.instance.SpawnEnemy(EnemyManager.instance.goombaPrefab);
+            EnemyManager.instance.SpawnEnemy(EnemyManager.instance.koopaPrefab);
         }
     }
 

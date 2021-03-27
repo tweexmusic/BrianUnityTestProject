@@ -1,37 +1,23 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameManager.cs" Line="33" Column="1" />
-      <File FileName="Assets/Scripts/MusicArea1.cs" Line="18" Column="25" />
-      <File FileName="Assets/Scripts/FMODEventConstants.cs" Line="24" Column="77" />
-      <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" Line="28" Column="33" />
-      <File FileName="Assets/Scripts/Player.cs" Line="31" Column="30" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="52" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MusicArea1.cs" />
+      <File FileName="Assets/Scripts/FMODEventConstants.cs" />
+      <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" />
+      <File FileName="Assets/Scripts/Player.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="78" Column="38" />
       <File FileName="Assets/Scripts/Enemy.cs" Line="52" Column="108" />
-      <File FileName="Assets/Scripts/Goomba.cs" Line="31" Column="26" />
-      <File FileName="Assets/Scripts/Koopa.cs" Line="5" Column="31" />
-      <File FileName="Assets/Scripts/Bobomb.cs" Line="20" Column="1" />
-      <File FileName="Assets/Scripts/HammerBro.cs" Line="30" Column="49" />
-      <File FileName="Assets/FMOD Build Assets/GUIDs.txt" Line="29" Column="40" />
+      <File FileName="Assets/Scripts/Goomba.cs" />
+      <File FileName="Assets/Scripts/Koopa.cs" />
+      <File FileName="Assets/Scripts/Bobomb.cs" />
+      <File FileName="Assets/Scripts/HammerBro.cs" Line="30" Column="81" />
+      <File FileName="Assets/FMOD Build Assets/GUIDs.txt" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BrianUnityTestProject" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="FMOD Build Assets" expanded="True" />
-              <Node name="Scripts" expanded="True">
-                <Node name="Enemy.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c0405c6a-b69f-4500-ae5c-86ae338ba68a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3b17fedd-f32a-4f6f-bf6b-67d65f98a134" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
