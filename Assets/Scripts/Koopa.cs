@@ -7,28 +7,18 @@
 
 public class Koopa : Enemy
 {
-    //Constructor that defines enemy name
+    //Constructor that defines enemy stats
     public Koopa()
     {
         enemyName = "Koopa";
+        enemyHealth = 35;
+        attackValue = 7;
+        keyInput = KeyCode.K;
     }
 
     public override void EnemyAttack(int damage)
     {
         base.EnemyAttack(damage);
         FMODOneShotPlayer.instance.PlayOneShotSound(FMODEventConstants.KOOPA_ATTACK);
-    }
-
-    public override void EnemyHealth()
-    {
-        enemyHealth = 35;
-    }
-
-    private void Update()
-    {
-        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(KeyCode.K))
-        {
-            EnemyAttack(7);
-        }
     }
 }

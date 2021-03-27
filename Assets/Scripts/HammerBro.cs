@@ -7,10 +7,13 @@
 
 public class HammerBro : Enemy
 {
-    //Constructor that defines enemy name
+    //Constructor that defines enemy stats
     public HammerBro()
     {
         enemyName = "Hammer Bro";
+        enemyHealth = 25;
+        attackValue = 15;
+        keyInput = KeyCode.H;
     }
 
     public override void EnemyAttack(int damage)
@@ -28,19 +31,6 @@ public class HammerBro : Enemy
             Debug.LogError("A Goomba and a Koopa appear to avenge the death of their friend, " + enemyName + "!");
             EnemyManager.instance.SpawnEnemy(EnemyManager.instance.goombaPrefab);
             EnemyManager.instance.SpawnEnemy(EnemyManager.instance.koopaPrefab);
-        }
-    }
-
-    public override void EnemyHealth()
-    {
-        enemyHealth = 35;
-    }
-
-    private void Update()
-    {
-        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(KeyCode.H))
-        {
-            EnemyAttack(15);
         }
     }
 }

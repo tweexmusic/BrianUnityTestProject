@@ -7,10 +7,12 @@
 
 public class Bobomb : Enemy
 {
-    //Constructor that defines enemy name
+    //Constructor that defines enemy stats
     public Bobomb()
     {
         enemyName = "Bobomb";
+        attackValue = 12;
+        keyInput = KeyCode.B;
     }
 
     public override void EnemyAttack(int damage)
@@ -24,13 +26,5 @@ public class Bobomb : Enemy
         base.EnemeyTakeDamage(damage);
         Debug.Log(enemyName + " explodes dealing " + damage + " damage to the player!");
         Player.instance.PlayerTakeDamage(damage);
-    }
-
-    private void Update()
-    {
-        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(KeyCode.B))
-        {
-            EnemyAttack(12);
-        }
     }
 }

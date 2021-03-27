@@ -6,10 +6,12 @@
 
 public class Enemy : MonoBehaviour
 {
-    public string enemyName;
-    public int enemyHealth;
+    protected string enemyName;
+    protected int enemyHealth = 20;
+    protected KeyCode keyInput;
+    protected int attackValue;
 
-    //Constructor that defines enemy name
+    //Constructor that defines enemy stats
     public Enemy()
     {
         enemyName = "Generic Enemy";
@@ -48,17 +50,16 @@ public class Enemy : MonoBehaviour
         Debug.Log(enemyName + " deals " + damage + " damage to the player!");
     }
 
-    /// <summary>
-    /// Used to set health value for enemies.  Deafult is 20, but can be overridden in derived enemy class.
-    /// </summary>
-    public virtual void EnemyHealth()
+    public int GetEnemyHealth()
     {
-        enemyHealth = 20;
+        return enemyHealth;
     }
 
-    void Awake()
+    void Update()
     {
-        //Sets enemy health values when enemy list is created inside of EnemyManager.
-        EnemyHealth();
+        if (enemyHealth > 0 && Player.instance.playerHealth > 0 && Input.GetKeyDown(keyInput))
+        {
+            EnemyAttack(attackValue);
+        }
     }
 }

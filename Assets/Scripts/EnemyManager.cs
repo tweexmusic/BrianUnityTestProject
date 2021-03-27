@@ -36,6 +36,7 @@ public class EnemyManager : MonoBehaviour
     public void SpawnEnemy(Enemy enemyPrefab)
     {
         enemiesList.Add(Instantiate(enemyPrefab));
+        enemiesAlive = true;
     }
 
 
@@ -63,12 +64,12 @@ public class EnemyManager : MonoBehaviour
     {
         if (enemiesList.Count > 0)
         {
-            enemiesList[0].EnemeyTakeDamage(damage);
+            enemiesList[Random.Range(0, enemiesList.Count)].EnemeyTakeDamage(damage);
         }
 
         foreach (Enemy enemy in enemiesList.ToArray())
         {
-            if (enemy.enemyHealth <= 0)
+            if (enemy.GetEnemyHealth() <= 0)
             {
                 enemiesList.Remove(enemy);
                 Destroy(enemy.gameObject);
