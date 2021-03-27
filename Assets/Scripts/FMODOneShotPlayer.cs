@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//Class handles playing FMOD events in code or inside Unity itself.
+
+/// <summary>
+///Class handles playing one shot FMOD events in code or inside Unity itself.
+///SINGLETON
+/// </summary>
 
 public class FMODOneShotPlayer : MonoBehaviour
 {
     public static FMODOneShotPlayer instance;
 
-    public void FMODPlayOneShotSound(string fmodEventPath)
+    public void PlayOneShotSound(string fmodEventPath)
     {
         FMODUnity.RuntimeManager.PlayOneShot(fmodEventPath, GetComponent<Transform>().position);
     }
@@ -23,17 +27,5 @@ public class FMODOneShotPlayer : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

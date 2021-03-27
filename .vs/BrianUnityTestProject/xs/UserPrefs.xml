@@ -1,27 +1,22 @@
 ﻿<Properties StartupConfiguration="{E240E8FA-F84B-F838-5D1E-25D2D195B249}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player.cs">
     <Files>
-      <File FileName="Assets/Scripts/MusicLevel1.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/EnemyManager.cs" Line="60" Column="14" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="54" Column="2" />
-      <File FileName="Assets/Scripts/Player.cs" Line="34" Column="79" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="34" Column="53" />
+      <File FileName="Assets/Scripts/FMODEventConstants.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FMODOneShotPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="5" Column="11" />
-      <File FileName="Assets/Scripts/Goomba.cs" Line="14" Column="59" />
-      <File FileName="Assets/Scripts/Koopa.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Bobomb.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player.cs" Line="17" Column="67" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="70" Column="55" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="55" Column="28" />
+      <File FileName="Assets/Scripts/Koopa.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/Koopa.cs" Line="10" Column="37" />
+      <File FileName="Assets/Scripts/Bobomb.cs" Line="11" Column="1" />
+      <File FileName="Assets/Scripts/HammerBro.cs" Line="15" Column="26" />
+      <File FileName="Assets/FMOD Build Assets/GUIDs.txt" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BrianUnityTestProject" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8af17da5-d486-4b1b-a7e3-f2a8349d2174" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
