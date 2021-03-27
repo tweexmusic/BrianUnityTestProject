@@ -29,8 +29,10 @@ public class EnemyManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Spawns Goomba enemy game objects into the scene and adds them to the enemiesList.
-    /// </summary>
+	/// Spawns enemy game objects into the scene and adds them to the enemiesList.
+	/// Parameter needs to be passed in as "EnemyManager.instance.[ENEMYNAME]Prefab"
+	/// </summary>
+	/// <param name="enemyPrefab"></param>
     public void SpawnEnemy(Enemy enemyPrefab)
     {
         enemiesList.Add(Instantiate(enemyPrefab));
